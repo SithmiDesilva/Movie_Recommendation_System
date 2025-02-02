@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <link rel="stylesheet" href="static\index.css">
+    
+</head>
+
+<body>
+    <section id="header">
+        <ul id="navbar">
+            <li><a href="" class="button">Home</a></li>
+            <li><a href="/about" class="button">About</a></li>
+            <li><a href="/login" class="button">Login</a></li>
+            
+            </ul>
+</section>
+    <div class="container">
+        <h1>Movie Recommendation System</h1>
+        <select id="emotion">
+            <option value="Happy"></option>
+            <option value="Drama">Drama</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Horror">Horror</option>
+            <option value="Crime">Crime</option>
+            <option value="Romance">Romance</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Animation">Animation</option>
+            <option value="Scientific Fiction">Scientific Fiction</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Biography">Biography</option>
+            <option value="Family">Family</option>
+            <option value="History">History</option>
+            <option value="Music">Music</option>
+        </select>
+        <button onclick="getRecommendations()">Get Recommendations</button>
+        <ul id="movies"></ul>
+    </div>
+    <script src="static\index.js"></script>
+
+    <footer>
+        <p><strong>© 2025 Movie Recommendation System. All rights reserved.</strong></p>
+    </footer>
+</body>
+
+</html>
