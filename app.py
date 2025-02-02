@@ -30,7 +30,7 @@ URLS = {
 def get_movies(emotion):
     url = URLS.get(emotion)
     if not url:
-        return []
+     return []
 
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
