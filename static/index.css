@@ -2,12 +2,11 @@
     margin: 10px;
     padding: 40px;
     box-sizing: border-box;
-    background-image: url('backgroundimg.jpg');
 }
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    background-color:black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +15,7 @@ body {
     margin-top: 70px;
     margin-bottom: 80px;
     margin-left: auto;
-   
+    background-image: url('images/backgroundimg.jpg');
 }
 .container {
     background-color: #fff;
@@ -43,6 +42,12 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
+}
+
+#navbar ul {
+    display:block;
+    margin-right: auto;
+   
 }
 
 

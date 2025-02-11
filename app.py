@@ -48,14 +48,6 @@ def get_movies(emotion):
 def home():
     return render_template('index.html')
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
-
-@app.route('/login')
-def contact():
-    return render_template('login.html')
-    
 @app.route('/recommend', methods=['POST'])
 def recommend():
     emotion = request.form.get('emotion')
