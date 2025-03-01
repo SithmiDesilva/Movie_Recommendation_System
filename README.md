@@ -26,7 +26,8 @@ This project is a **Movie Recommendation System** that suggests movies based on 
 
 ## 🎥 Demo 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/1dc2ec95-b52b-43f7-939e-3af0c96f060c" />
-<img width="957" alt="image" src="https://github.com/user-attachments/assets/324e306b-e94c-4b1d-bf2f-90ae7f5c1cd6" />
-<img width="302" alt="image" src="https://github.com/user-attachments/assets/f85839fd-b6e6-46fb-b38d-7a058b70b5d9" />
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/324e306b-e94c-4b1d-bf2f-90ae7f5c1cd6" />
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/947b6dc6-1a53-400f-af4d-7bf31b8b75c3" />
+
 
 
