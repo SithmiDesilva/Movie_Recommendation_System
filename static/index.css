@@ -58,7 +58,10 @@ body p {
     text-align: center;
     max-width: 500px; /* Set a reasonable width */
     width: 100%;
-    margin: 170px 50px 40px; /* Center horizontally and adjust top margin */
+    margin: 280px 50px 40px;
+    margin-left: -440px;
+    margin-right: 340px; /* Center horizontally and adjust top margin */
+    
     
 }
 
@@ -75,7 +78,7 @@ body p {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 80px 20px; /* Reduce padding */
+    padding: 70px 20px; /* Reduce padding */
     position: absolute;
     top: 0;
     left: 0;
@@ -85,7 +88,7 @@ body p {
 }
 
 #navbar h1 {
-    color: #fff;
+    color:#bdb6b6;
     font-size: 50px;
     margin-left: 220px;
     text-align: center;
@@ -94,13 +97,16 @@ body p {
     transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) ease;
 }
 
-#navbar h3 {
+h2 {
     color: #fff;
-    font-size: 20px;
+    font-size: 20.5px;
    text-align: center;
    margin-top: 0;
-    z-index: -1;
-    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) ease;
+    margin-bottom: 100px;
+    margin-left: 260px;
+    padding:20px 5px 60px 60px;
+    width:100%;
+    margin-right: -120px;
 }
 
 
