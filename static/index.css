@@ -1,61 +1,119 @@
-*{
-    margin: 10px;
-    padding: 40px;
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+/* Fix body alignment */
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color:black;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:auto;
-    align-self: auto;
-    margin-top: 70px;
-    margin-bottom: 80px;
-    margin-left: auto;
-    background-image: url('images/backgroundimg.jpg');
+    min-height: 100vh; /* Set min-height to ensure proper centering */
+    margin: 0; /* Remove negative margins */
+    padding: 20px;
+    position: relative;
 }
+
+/* Background overlay */
+body::before {
+    content: "";
+    background-image: url('images/backgroundimg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+body h1 {
+    font-size: 48px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px; /* Adjust margin to control spacing between h1 and p */
+    margin-top:10px
+}
+
+body p {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 0; /* Remove top margin to ensure p is directly under h1 */
+    margin-bottom: 20px; /* Adjust bottom margin as needed */
+}
+
+/* Container styling */
 .container {
-    background-color: #fff;
+    background-color: #bdb6b6;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    margin-bottom: 40px;
-    padding-bottom: 10px;
-    background-image: url('images/background_img.jpg');
-
+    max-width: 500px; /* Set a reasonable width */
+    width: 100%;
+    margin: 170px 50px 40px; /* Center horizontally and adjust top margin */
+    
 }
 
+.container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color:black;
+}
+
+/* Navbar adjustments */
 #navbar {
-    background-color:rgb(69, 3, 3);
+    background-color: rgb(7, 6, 6);
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: 40px;
-    margin: 0;
-    position:absolute;
+    padding: 80px 20px; /* Reduce padding */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    height: 50px;
     z-index: 1000;
 }
 
-#navbar ul {
-    display:block;
-    margin-right: auto;
-   
+#navbar h1 {
+    color: #fff;
+    font-size: 50px;
+    margin-left: 220px;
+    text-align: center;
+    z-index: -1;
+    margin-bottom: 10px;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) ease;
+}
+
+#navbar h3 {
+    color: #fff;
+    font-size: 20px;
+   text-align: center;
+   margin-top: 0;
+    z-index: -1;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275) ease;
 }
 
 
- button {
+
+button {
     padding: 10px;
     font-size: 16px;
    margin-top: 3px;
-   background-color: #b9bab8;
+   background-color: #290206;
+   color:white;
+   margin-left:10px;
+   margin-bottom:20px;
+   cursor: pointer;
    
 }
 
@@ -63,17 +121,30 @@ select{
     padding: 10px;
     font-size: 16px;
    margin-top: 3px;
+   background-color: #a8a0a0;
+   cursor: pointer;
+   margin-bottom:20px;
 }
 
+/* Fix list styling to remove extra spaces */
 ul {
-    list-style-type:none;
+    list-style-type: none;
     padding: 0;
+    margin: 0; /* Remove any unwanted margin */
 }
 
+/* Movie list styling */
 li {
-    background-color: #f9f9f9;
+    background-color: #bdb6b6;
     padding: 10px;
     margin: 5px 0;
     border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
 }
 
+/* Fix extra spacing inside list items */
+.movie-list li {
+    padding: 10px;
+    margin: 5px 0;
+}

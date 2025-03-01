@@ -27,6 +27,7 @@ URLS = {
     "Music": 'https://www.imdb.com/search/title/?title_type=feature&genres=music',
 }
 
+
 def get_movies(emotion):
     url = URLS.get(emotion)
     if not url:
@@ -41,8 +42,8 @@ def get_movies(emotion):
     soup = BeautifulSoup(response.content, 'html.parser')
 
     # Extract movie titles
-    titles = [a.get_text() for a in soup.find_all('a', href=re.compile(r'/title/tt\d+/'))]
-    return titles[:40]  # Return only the first 20 titles
+    titles = [a.get_text() for a in soup.find_all('a', href=re.compile(r'/title/tt\d+'))]
+    return titles[:20]  # Return only the first 20 titles
 
 @app.route('/')
 def home():
