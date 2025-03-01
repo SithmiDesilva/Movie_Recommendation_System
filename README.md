@@ -29,5 +29,12 @@ This project is a **Movie Recommendation System** that suggests movies based on 
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/324e306b-e94c-4b1d-bf2f-90ae7f5c1cd6" />
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/947b6dc6-1a53-400f-af4d-7bf31b8b75c3" />
 
+## 🌍 Future Enhancements
+✅ Integrating Machine Learning for personalized recommendations
+✅ Adding User Authentication to save movie preferences
+✅ Implementing Real-Time APIs instead of web scraping
+✅ Enhancing the UI for a more interactive experience
+
+⭐ If you found this project useful, don’t forget to give it a star! ⭐
 
 
